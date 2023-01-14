@@ -45,10 +45,9 @@ public class StudentService {
             student.setName(name);
         }
         if(email != null && email.length() > 0 && !Objects.equals(student.getEmail(),email) ){
-            Optional<Student> studentOptional = studentRepository.findStudentByEmail(student.getEmail());
+            Optional<Student> studentOptional = studentRepository.findStudentByEmail(email);
             if(studentOptional.isPresent()){
                 throw new IllegalStateException("email taken for update");
-                // TODO : fix an error whn you put a request to update the email doesn't work but with the name it work very well
             }
             student.setEmail(email);
         }
