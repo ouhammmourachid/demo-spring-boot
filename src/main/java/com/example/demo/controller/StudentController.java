@@ -1,6 +1,7 @@
-package com.example.demo.student;
+package com.example.demo.controller;
 
-import lombok.AllArgsConstructor;
+import com.example.demo.entity.Student;
+import com.example.demo.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

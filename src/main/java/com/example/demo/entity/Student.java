@@ -1,4 +1,4 @@
-package com.example.demo.student;
+package com.example.demo.entity;
 
 import java.time.LocalDate;
 import java.time.Period;
@@ -38,7 +38,6 @@ public class Student {
         this.name = name;
         this.email = email;
         this.dob = dob;
-        this.age = age;
     }
 
     public Integer getAge() {
